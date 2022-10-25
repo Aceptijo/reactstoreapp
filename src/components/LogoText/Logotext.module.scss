@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: $regularFont;
+  .top {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+
+  }
+  .bottom {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+}

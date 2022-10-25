@@ -1,0 +1,15 @@
+@import '../../variables';
+
+.basket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  span {
+    margin-top: 3px;
+    font-family: $regularFont;
+    font-weight: 500;
+    font-size: 14px;
+    color: $secondaryColor
+  }
+}

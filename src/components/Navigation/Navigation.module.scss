@@ -1,0 +1,32 @@
+@import '../../variables';
+
+.navbar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 45px;
+   background: $mainColor;
+   font-family: $regularFont;
+   color: white;
+   margin: 0 auto;
+   nav {
+      display: flex;
+      align-items: center;
+      color: white;
+      max-width: 1300px;
+      font-weight: 400;
+      font-size: 18px;
+      gap: 30px;
+      .phone {
+         width: 530px / 1300px * 100%;
+         white-space: nowrap;
+         margin: auto auto auto 145px;
+         font-weight: 500;
+      }
+   }
+   a {
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+   }
+}

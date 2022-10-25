@@ -1,0 +1,23 @@
+@import '../../variables';
+
+.search {
+    width: 530px / 1300px * 100%;
+    display: flex;
+    border: 3px solid $secondaryColor;
+    border-radius: 20px;
+    padding: 14px 30px;
+    margin: auto 135px;
+    input {
+      background: #212121;
+      border: none;
+      width: 100%;
+      margin-left: 15px;
+      font-family: $regularFont;
+      font-size: 18px;
+      font-weight: 500;
+      color: $searchColor;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+}
