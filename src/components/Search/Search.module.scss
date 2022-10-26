@@ -7,6 +7,11 @@
     border-radius: 20px;
     padding: 12px 30px;
     margin: 0 135px;
+    transition: all 0.3s ease-out;
+    &:hover {
+      box-shadow: 0 1px 7px 1px $secondaryColor;
+      transition: all 0.3s ease-out
+    }
     input {
       background: inherit;
       border: none;
