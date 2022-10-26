@@ -1,18 +1,15 @@
 import React from 'react';
-import './Home.module.scss';
-import Logo from '../../components/Logo/Logo';
-import Search from '../../components/Search/Search';
-import Favourites from '../../components/Favourites/Favourites';
-import Basket from '../../components/Basket/Basket';
 import styles from './Home.module.scss';
+import Catalog from '../../components/Catalog/Catalog';
+import LogoSection from '../../components/LogoSection/LogoSection';
+import Slider from '../../components/Slider/Slider';
 
 const HomePage = () => {
    return (
       <div className={styles.home}>
-         <Logo />
-         <Search />
-         <Favourites />
-         <Basket />
+         <LogoSection />
+         <Catalog />
+         <Slider />
       </div>
    );
 };

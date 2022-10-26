@@ -1,0 +1,72 @@
+@import '../../assets/styles/variables';
+
+.slider {
+  margin-top: 50px;
+  position: relative;
+  height: 520px;
+  .slide {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .previousArrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translate(0, -50%);
+    font-size: 55px;
+    color: $secondaryColor;
+    z-index: 1;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      color: $mainColor;
+      transition: .3s;
+    }
+  }
+  .nextArrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    transform: translate(0, -50%);
+    font-size: 55px;
+    color: $secondaryColor;
+    z-index: 1;
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+      color: $mainColor;
+      transition: .3s;
+    }
+  }
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .dot {
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 35px;
+    color: $dotColor;
+    transition: .3s;
+    &:hover {
+      color: $secondaryColor;
+      transition: .3s;
+    }
+  }
+  .dot_active {
+    margin: 0 15px;
+    cursor: pointer;
+    font-size: 35px;
+    color: $secondaryColor;
+    transition: .3s;
+    &:hover {
+      color: $mainColor;
+      transition: .3s;
+    }
+  }
+}

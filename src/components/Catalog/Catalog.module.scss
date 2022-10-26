@@ -1,0 +1,25 @@
+@import '../../assets/styles/variables';
+
+.catalog {
+  display: flex;
+  align-items: center;
+  width: 310px;
+  height: 52px;
+  border-radius: 20px;
+  border: none;
+  background: $secondaryColor;
+  padding: 0 30px;
+  cursor: pointer;
+  transition: .3s;
+  &:hover {
+    background: $mainColor;
+    transition: .3s;
+  }
+  span {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: $regularFont;
+    color: white;
+    margin: 0 60px 0 15px;
+  }
+}

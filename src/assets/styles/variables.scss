@@ -1,8 +1,9 @@
-@use 'src/variablesLight';
+@use 'variablesLight';
 
 $mainColor: var(--main-color);
 $secondaryColor: var(--secondary-color);
 $regularFont: var(--font-regular);
 $searchColor: var(--search-color);
+$dotColor: var(--dot-color);
 
 

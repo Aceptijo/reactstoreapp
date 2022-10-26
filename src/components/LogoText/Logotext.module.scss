@@ -1,4 +1,4 @@
-@import '../../variables';
+@import '../../assets/styles/variables';
 
 .text {
   display: flex;
@@ -8,12 +8,12 @@
   .top {
     font-size: 40px;
     font-weight: 600;
-    line-height: 49px;
+    line-height: 40px;
 
   }
   .bottom {
     font-size: 13px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 25px;
   }
 }

@@ -1,14 +1,14 @@
-@import '../../variables';
+@import '../../assets/styles/variables';
 
 .search {
     width: 530px / 1300px * 100%;
     display: flex;
     border: 3px solid $secondaryColor;
     border-radius: 20px;
-    padding: 14px 30px;
-    margin: auto 135px;
+    padding: 12px 30px;
+    margin: 0 135px;
     input {
-      background: #212121;
+      background: inherit;
       border: none;
       width: 100%;
       margin-left: 15px;
