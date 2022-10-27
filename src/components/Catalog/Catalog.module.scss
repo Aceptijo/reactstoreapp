@@ -1,8 +1,10 @@
 @import '../../assets/styles/variables';
 
-.catalog {
+
+.button {
   display: flex;
   align-items: center;
+  position: relative;
   width: 310px;
   height: 52px;
   border-radius: 20px;
@@ -13,8 +15,8 @@
   transition: .3s;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
   &:hover {
-    background: $mainColor;
     transition: .3s;
+    border-radius: 20px 20px 0 0;
   }
   &:focus-visible {
     outline: none;
@@ -28,4 +30,93 @@
     color: white;
     margin: 0 60px 0 15px;
   }
+
+  .list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 310px;
+    z-index: 2;
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      height: 52px;
+      border: 0 solid $secondaryColor;
+      background: $secondaryColor;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: $regularFont;
+      color: white;
+      &:hover {
+        background: $mainColor;
+      }
+      .arrow {
+        margin-right: 15px;
+      }
+      .catList {
+        &_first {
+          left: 100%;
+          position: absolute;
+          top: 0;
+          height: 52px;
+          width: 310px;
+          border: 0 solid white;
+          background: white;
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: $secondaryColor;
+            padding: 15px;
+          }
+          &_item {
+            list-style: none;
+            left: 100%;
+            position: absolute;
+            top: 0;
+            height: 52px;
+            width: 310px;
+            border: 0 solid white;
+            background: white;
+          }
+        }
+        &_second {
+          position: absolute;
+          top: 0;
+          left: 200%;
+          height: 52px;
+          width: 310px;
+          border: 0 solid white;
+          background: white;
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: $secondaryColor;
+            padding: 15px;
+          }
+        }
+        &_third {
+          left: 300%;
+          top: 0;
+          position: absolute;
+          height: 52px;
+          width: 310px;
+          border: 0 solid white;
+          background: white;
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: $secondaryColor;
+            padding: 15px;
+          }
+        }
+
+      }
+    }
+  }
 }
+

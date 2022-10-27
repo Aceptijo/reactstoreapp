@@ -8,7 +8,7 @@
     padding: 12px 30px;
     margin: 0 135px;
     transition: all 0.3s ease-out;
-    &:hover {
+    &:hover{
       box-shadow: 0 1px 7px 1px $secondaryColor;
       transition: all 0.3s ease-out
     }
@@ -21,8 +21,9 @@
       font-size: 18px;
       font-weight: 500;
       color: $searchColor;
-      &:focus-visible {
+      &:focus-visible{
         outline: none;
       }
+
     }
 }

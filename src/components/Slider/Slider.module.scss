@@ -11,6 +11,7 @@
     background-size: cover;
     background-position: center;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: .5s;
     &:focus-visible {
       outline: none;
     }

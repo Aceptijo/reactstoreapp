@@ -3,18 +3,18 @@ import styles from './Slider.module.scss';
 
 const Slider = () => {
    const slides = [
-      { url: 'http://localhost:3000/Image-0.jpg', title: 'cat' },
-      { url: 'http://localhost:3000/Image-1.jpg', title: 'cat' },
-      { url: 'http://localhost:3000/Image-2.jpg', title: 'cat' },
-      { url: 'http://localhost:3000/Image-3.jpg', title: 'cat' },
-      { url: 'http://localhost:3000/Image-4.jpg', title: 'cat' },
-      { url: 'http://localhost:3000/Image-5.jpg', title: 'cat' },
-      { url: 'http://localhost:3000/Image-6.jpg', title: 'dog' },
-      { url: 'http://localhost:3000/Image-7.jpg', title: 'dog' },
-      { url: 'http://localhost:3000/Image-8.jpg', title: 'dog' },
-      { url: 'http://localhost:3000/Image-9.jpg', title: 'dog' },
-      { url: 'http://localhost:3000/Image-10.jpg', title: 'dog' },
-      { url: 'http://localhost:3000/Image-11.jpg', title: 'dog' },
+      { url: 'http://localhost:3000/Image-0.jpg' },
+      { url: 'http://localhost:3000/Image-1.jpg' },
+      { url: 'http://localhost:3000/Image-2.jpg' },
+      { url: 'http://localhost:3000/Image-3.jpg' },
+      { url: 'http://localhost:3000/Image-4.jpg' },
+      { url: 'http://localhost:3000/Image-5.jpg' },
+      { url: 'http://localhost:3000/Image-6.jpg' },
+      { url: 'http://localhost:3000/Image-7.jpg' },
+      { url: 'http://localhost:3000/Image-8.jpg' },
+      { url: 'http://localhost:3000/Image-9.jpg' },
+      { url: 'http://localhost:3000/Image-10.jpg' },
+      { url: 'http://localhost:3000/Image-11.jpg' },
    ];
 
    let [currentIndex, setCurrentIndex] = useState(0);
@@ -42,10 +42,11 @@ const Slider = () => {
                ❱
             </div>
          </div>
-         <img
+         <div
             className={styles.slide}
-            src={`http://localhost:3000/Image-${currentIndex}.jpg`}
-            alt="Slider"
+            style={{
+               backgroundImage: `url(http://localhost:3000/Image-${currentIndex}.jpg)`,
+            }}
          />
          <div className={styles.dots}>
             {slides.map((slide, slideIndex) =>

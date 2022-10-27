@@ -6,12 +6,15 @@ import { ReactComponent as BurgerIcon } from './burgerIcon.svg';
 
 const Catalog = () => {
    return (
-      <button className={styles.catalog}>
-         <BurgerIcon />
-         <span>Каталог</span>
-         <SmallIcon />
-         <GreatIcon />
-      </button>
+      <section className={styles.catalog}>
+         <button className={styles.button}>
+            <BurgerIcon />
+            <span>Каталог</span>
+            <SmallIcon />
+            <GreatIcon />
+
+         </button>
+      </section>
    );
 };
 

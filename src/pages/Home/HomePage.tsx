@@ -6,11 +6,11 @@ import Slider from '../../components/Slider/Slider';
 
 const HomePage = () => {
    return (
-      <div className={styles.home}>
+      <main className={styles.home}>
          <LogoSection />
          <Catalog />
          <Slider />
-      </div>
+      </main>
    );
 };
 
