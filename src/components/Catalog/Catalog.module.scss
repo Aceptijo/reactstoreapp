@@ -18,8 +18,8 @@
   &:hover {
     transition: .3s;
     border-radius: 20px 20px 0 0;
-    > .menu {
-      background: black;
+    > * {
+      display: block;
     }
   }
   &:focus-visible {

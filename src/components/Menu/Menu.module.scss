@@ -36,11 +36,12 @@
       position: absolute;
       overflow: hidden;
       left: 100%;
-      top: 0;
+      top: 62px / 372px * 100%;
       background: white;
       font-family: $regularFont;
       color: $secondaryColor;
       border-radius: 0 20px 20px 20px;
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
       .group {
         display: flex;
         flex-direction: column;

@@ -1,6 +1,6 @@
 export interface IChildren {
-   title?: string;
-   variation?: string[];
+   title: string;
+   variation: string[];
 }
 
 export interface IAnimals {
