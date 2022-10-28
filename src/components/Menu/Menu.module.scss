@@ -21,9 +21,15 @@
       > .container {
         display: flex;
       }
+      > .arrow {
+        transition: 0.3s;
+        transform: rotateZ(0deg);
+      }
     }
     .arrow {
+      transform: rotateZ(90deg);
       margin-right: 15px;
+      transition: 0.3s;
     }
     .name {
       font-size: 20px;

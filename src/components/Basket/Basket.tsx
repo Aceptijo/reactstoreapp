@@ -9,7 +9,7 @@ const Basket = () => {
 
    return (
       <div onClick={() => navigation('/basket')} className={styles.basket}>
-         <BasketIcon />
+         <BasketIcon className={styles.icon} />
          <span>Корзина</span>
       </div>
    );

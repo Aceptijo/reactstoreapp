@@ -5,7 +5,7 @@ import styles from './Search.module.scss';
 const Search = () => {
    return (
       <form className={styles.search}>
-         <SearchIcon />
+         <SearchIcon className={styles.icon} />
          <input type="text" />
       </form>
    );

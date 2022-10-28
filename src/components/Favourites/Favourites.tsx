@@ -8,7 +8,7 @@ const Favourites = () => {
 
    return (
       <div onClick={() => navigation('/favourites')} className={styles.favourites}>
-         <FavouriteIcon />
+         <FavouriteIcon className={styles.icon} />
          <span>Избранное</span>
       </div>
    );

@@ -5,11 +5,21 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  &:hover {
+    > .icon {
+      stroke: $mainColor;
+      transform: rotateZ(15deg);
+      transition: .5s;
+    }
+  }
   span {
     margin-top: 3px;
     font-family: $regularFont;
     font-weight: 500;
     font-size: 14px;
     color: $secondaryColor
+  }
+  .icon {
+    transition: .5s;
   }
 }
