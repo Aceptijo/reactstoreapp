@@ -1,3 +1,5 @@
+@import '/src/assets/styles/variables';
+
 * {
   padding: 0;
   margin: 0;
@@ -10,3 +12,18 @@ body {
   margin: 0;
   padding: 0;
 }
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $secondaryColor;
+  border-radius: 10px;
+  border: 2px solid white;
+  &:hover {
+    background: $mainColor;
+  }
+}
+
+

@@ -1,0 +1,55 @@
+@import '../../assets/styles/variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 27%;
+  border: 3px solid $cardBorderColor;
+  border-radius: 20px;
+  padding: 30px;
+  transition: .3s;
+  &:hover {
+    border: 3px solid $secondaryColor;
+    transition: .3s;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    .image {
+      width: 50%;
+      height: 50%;
+      margin: 0 auto;
+    }
+    .like {
+      position: absolute;
+      right: 0;
+      cursor: pointer;
+      stroke: $dotColor;
+      transition: 0.3s;
+      &:hover {
+        transform: rotateZ(15deg) scale(1.1);
+        transition: 0.3s;
+        fill: $secondaryColor;
+        stroke: $secondaryColor;
+      }
+    }
+    .name {
+      font-family: $regularFont;
+      font-size: 24px;
+      font-weight: 500;
+      color: $secondaryColor;
+    }
+    .description {
+
+      margin-top: 30px;
+      height: 60px;
+      font-family: $regularFont;
+      font-size: 14px;
+      font-weight: 400;
+      color: $secondaryColor;
+    }
+  }
+}

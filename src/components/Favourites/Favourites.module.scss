@@ -4,13 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 45px;
-  transition: .5s;
   cursor: pointer;
+  margin-right: 45px;
   &:hover {
     > .icon {
       stroke: $mainColor;
-      transition: .5s;
+      transition: .3s;
       transform: rotateZ(15deg);
     }
   }
@@ -22,7 +21,7 @@
     color: $secondaryColor
   }
   .icon {
-    transition: .5s;
+    transition: .3s;
   }
 
 }

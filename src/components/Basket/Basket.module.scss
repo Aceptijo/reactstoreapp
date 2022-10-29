@@ -9,7 +9,7 @@
     > .icon {
       stroke: $mainColor;
       transform: rotateZ(15deg);
-      transition: .5s;
+      transition: .3s;
     }
   }
   span {
@@ -20,6 +20,6 @@
     color: $secondaryColor
   }
   .icon {
-    transition: .5s;
+    transition: .3s;
   }
 }

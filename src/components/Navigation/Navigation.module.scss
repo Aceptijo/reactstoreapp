@@ -9,6 +9,9 @@
    font-family: $regularFont;
    color: white;
    margin: 0 auto;
+   position: fixed;
+   z-index: 10;
+   width: 100%;
    nav {
       display: flex;
       align-items: center;

@@ -3,18 +3,18 @@ import styles from './Slider.module.scss';
 
 const Slider = () => {
    const slides = [
-      { url: 'http://localhost:3000/Image-0.jpg' },
-      { url: 'http://localhost:3000/Image-1.jpg' },
-      { url: 'http://localhost:3000/Image-2.jpg' },
-      { url: 'http://localhost:3000/Image-3.jpg' },
-      { url: 'http://localhost:3000/Image-4.jpg' },
-      { url: 'http://localhost:3000/Image-5.jpg' },
-      { url: 'http://localhost:3000/Image-6.jpg' },
-      { url: 'http://localhost:3000/Image-7.jpg' },
-      { url: 'http://localhost:3000/Image-8.jpg' },
-      { url: 'http://localhost:3000/Image-9.jpg' },
-      { url: 'http://localhost:3000/Image-10.jpg' },
-      { url: 'http://localhost:3000/Image-11.jpg' },
+      { url: 'http://localhost:3000/image-0.jpg' },
+      { url: 'http://localhost:3000/image-1.jpg' },
+      { url: 'http://localhost:3000/image-2.jpg' },
+      { url: 'http://localhost:3000/image-3.jpg' },
+      { url: 'http://localhost:3000/image-4.jpg' },
+      { url: 'http://localhost:3000/image-5.jpg' },
+      { url: 'http://localhost:3000/image-6.jpg' },
+      { url: 'http://localhost:3000/image-7.jpg' },
+      { url: 'http://localhost:3000/image-8.jpg' },
+      { url: 'http://localhost:3000/image-9.jpg' },
+      { url: 'http://localhost:3000/image-10.jpg' },
+      { url: 'http://localhost:3000/image-11.jpg' },
    ];
 
    let [currentIndex, setCurrentIndex] = useState(0);
@@ -45,7 +45,7 @@ const Slider = () => {
          <div
             className={styles.slide}
             style={{
-               backgroundImage: `url(http://localhost:3000/Image-${currentIndex}.jpg)`,
+               backgroundImage: `url(http://localhost:3000/image-${currentIndex}.jpg)`,
             }}
          />
          <div className={styles.dots}>
