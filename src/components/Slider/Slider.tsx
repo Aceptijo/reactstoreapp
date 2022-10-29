@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Slider.module.scss';
+import Socials from '../Socials/Socials';
 
 const Slider = () => {
    const slides = [
@@ -47,7 +48,9 @@ const Slider = () => {
             style={{
                backgroundImage: `url(http://localhost:3000/image-${currentIndex}.jpg)`,
             }}
-         />
+         >
+            <Socials />
+         </div>
          <div className={styles.dots}>
             {slides.map((slide, slideIndex) =>
                currentIndex === slideIndex ? (

@@ -1,5 +1,4 @@
 @import '../../assets/styles/variables';
-@import '../Menu/Menu.module';
 
 
 .button {
@@ -19,7 +18,7 @@
     transition: .3s;
     border-radius: 20px 20px 0 0;
     > * {
-      display: block;
+      visibility: visible;
     }
   }
   &:focus-visible {

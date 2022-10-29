@@ -1,0 +1,60 @@
+@import '../../assets/styles/variables';
+
+.container {
+  .instagram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    background: $secondaryColor;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background: $mainColor;
+      transform: rotateZ(-15deg) scale(1.1);
+      transition: 0.3s;
+      > .instIcon {
+        transform: rotateZ(-15deg) scale(1.1);
+        transition: 0.3s;
+      }
+    }
+    .instIcon {
+      transition: 0.3s;
+    }
+  }
+  .linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    background: $secondaryColor;
+    border-radius: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 30px 80px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background: $mainColor;
+      transform: rotateZ(-15deg) scale(1.1);
+      transition: 0.3s;
+      > .linkIcon {
+        transform: rotateZ(-15deg) scale(1.1);
+        transition: 0.3s;
+      }
+    }
+    .linkIcon {
+      width: 20px;
+      height: 20px;
+      transition: 0.3s;
+    }
+  }
+}
