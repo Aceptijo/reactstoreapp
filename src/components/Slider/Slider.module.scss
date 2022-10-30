@@ -55,7 +55,7 @@
   .dot {
     margin: 0 15px;
     cursor: pointer;
-    font-size: 35px;
+    font-size: 45px;
     color: $dotColor;
     transition: .3s;
     &:hover {
@@ -66,7 +66,7 @@
   .dot_active {
     margin: 0 15px;
     cursor: pointer;
-    font-size: 35px;
+    font-size: 45px;
     color: $secondaryColor;
     transition: .3s;
     &:hover {

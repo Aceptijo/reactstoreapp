@@ -1,0 +1,15 @@
+@import '../../assets/styles/variables';
+
+.container {
+  display: flex;
+  align-items: center;
+  font-family: $regularFont;
+  .text {
+    font-size: 18px;
+    font-weight: 400;
+    color: $secondaryColor;
+  }
+  .icon {
+    margin-left: 5px;
+  }
+}

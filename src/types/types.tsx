@@ -13,10 +13,6 @@ export interface ICard {
    name: string;
    description: string;
    price: number;
-   oldPrice: number;
+   oldPrice?: number;
    avatar: any;
-}
-
-export interface IButton {
-   children: string;
 }

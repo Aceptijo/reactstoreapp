@@ -6,8 +6,8 @@ import OffersTitle from '../OffersTitle/OffersTitle';
 const Offers = () => {
    return (
       <section className={styles.container}>
-         <OffersTitle />
-         <Cards />
+         <OffersTitle title={'Акции недели'} />
+         <Cards id={'offers'} />
       </section>
    );
 };

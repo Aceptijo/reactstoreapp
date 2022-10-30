@@ -7,10 +7,14 @@ interface PriceProps {
 }
 
 const Price: FC<PriceProps> = ({ card }) => {
-   return (
+   return card.oldPrice ? (
       <div className={styles.container}>
          <span className={styles.price}>{card.price + ' BYN'}</span>
          <span className={styles.old}>{card.oldPrice + ' BYN'}</span>
+      </div>
+   ) : (
+      <div className={styles.container}>
+         <span className={styles.price}>{card.price + ' BYN'}</span>
       </div>
    );
 };

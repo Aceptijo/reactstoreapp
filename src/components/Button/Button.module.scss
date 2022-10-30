@@ -1,10 +1,10 @@
 @import '../../assets/styles/variables';
 
 .btn {
+  width: 50%;
   border-radius: 20px;
   padding: 16px 0;
   background: $mainColor;
-  margin-top: 30px;
   cursor: pointer;
   transition: 0.3s;
   &:hover {

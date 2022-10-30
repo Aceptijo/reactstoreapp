@@ -4,11 +4,15 @@ import styles from './Cards.module.scss';
 import axios from 'axios';
 import { ICard } from '../../types/types';
 
-const Cards: FC = () => {
+interface CardsProps {
+   id: string;
+}
+
+const Cards: FC<CardsProps> = ({ id }) => {
    const [cards, setCards] = useState<ICard[]>([]);
 
    useEffect(() => {
-      fetchCards();
+      fetchCards().then((r) => r);
    }, []);
 
    const fetchCards = async () => {
@@ -20,9 +24,13 @@ const Cards: FC = () => {
 
    return (
       <div className={styles.cards}>
-         {cards.map((card) => (
-            <Card card={card} key={card.id} />
-         ))}
+         {id === 'offers'
+            ? cards
+                 .map((card) => <Card card={card} key={card.id} />)
+                 .filter((_, index) => index < 3)
+            : cards
+                 .map((card) => <Card card={card} key={card.id} />)
+                 .filter((_, index) => index > 2)}
       </div>
    );
 };

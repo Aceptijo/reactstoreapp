@@ -28,7 +28,7 @@ const Card: FC<CardProps> = ({ card }) => {
             <span className={styles.name}>{card.name}</span>
             <span className={styles.description}>{card.description}</span>
             <Price card={card} />
-            <Button />
+            <Button children={'В корзину'} value={'100%'} />
          </div>
       </div>
    );
