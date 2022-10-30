@@ -1,5 +1,49 @@
 @import '../../assets/styles/variables';
 
 .container {
-
+  display: flex;
+  justify-content: space-between;
+  margin-top: 230px;
+  font-family: $regularFont;
+  font-weight: 600;
+  color: $secondaryColor;
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    .title {
+      font-size: 36px;
+      color: $mainColor;
+      height: 100px;
+    }
+    .subtitle {
+      font-size: 18px;
+      line-height: 140%;
+      p {
+        margin-top: 30px;
+      }
+    }
+    .wishes {
+      font-size: 18px;
+      flex: 1;
+      margin-top: 100px;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    .offer {
+      font-size: 36px;
+      color: $mainColor;
+      height: 100px;
+    }
+    .text {
+      font-size: 18px;
+      line-height: 140%;
+      .par {
+        margin-top: 30px;
+      }
+    }
+  }
 }

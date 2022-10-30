@@ -9,6 +9,8 @@ import Consultation from '../../components/Consultation/Consultation';
 import Blogs from '../../components/Blogs/Blogs';
 import Brands from '../../components/Brands/Brands';
 import About from '../../components/About/About';
+import Notification from '../../components/Notification/Notification';
+import Footer from '../../components/Footer/Footer';
 
 const HomePage = () => {
    return (
@@ -22,6 +24,8 @@ const HomePage = () => {
          <Blogs />
          <Brands />
          <About />
+         <Notification />
+         <Footer />
       </main>
    );
 };

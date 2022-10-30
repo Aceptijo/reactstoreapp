@@ -8,7 +8,7 @@ import styles from './LogoSection.module.scss';
 const LogoSection = () => {
    return (
       <section className={styles.section}>
-         <Logo />
+         <Logo color={'#E74645'} />
          <Search />
          <Favourites />
          <Basket />

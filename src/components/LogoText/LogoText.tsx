@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './Logotext.module.scss';
 
-const LogoText = () => {
+interface LogoTextProps {
+   color: string;
+}
+
+const LogoText: FC<LogoTextProps> = ({ color }) => {
    return (
       <div className={styles.text}>
-         <span className={styles.top}>Котопузик</span>
-         <span className={styles.bottom}>Интернет-магазин зоотоваров</span>
+         <span className={styles.top} style={{ color: color }}>
+            Котопузик
+         </span>
+         <span className={styles.bottom} style={{ color: color }}>
+            Интернет-магазин зоотоваров
+         </span>
       </div>
    );
 };

@@ -1,0 +1,62 @@
+@import '../../assets/styles/variables';
+
+.line {
+  display: flex;
+  height: 294px;
+  margin-top: 230px;
+  font-family: $regularFont;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+    .title {
+      font-size: 36px;
+      color: $mainColor;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+  }
+  .form {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    input {
+      position: absolute;
+      left: 0;
+      width: 50%;
+      border-radius: 20px 0 0 20px;
+      padding: 16px 30px;
+      font-size: 18px;
+      font-family: $regularFont;
+      font-weight: 400;
+      color: $secondaryColor;
+      &::placeholder {
+        color: $secondaryColor
+      }
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+  .picture {
+    position: relative;
+    width: 40%;
+    .image {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  &::before {
+    content: '';
+    width: 100%;
+    height: inherit;
+    display: block;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    background: $cardBorderColor;
+  }
+}
