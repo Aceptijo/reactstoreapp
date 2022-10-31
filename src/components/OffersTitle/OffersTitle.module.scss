@@ -16,6 +16,15 @@
     font-weight: 400;
     color: $secondaryColor;
     flex: 0 0 1;
+    cursor: pointer;
+    transition: .1s;
+    &:hover {
+      font-size: 20px;
+      font-weight: 600;
+      color: $mainColor;
+      transition: .1s;
+
+    }
   }
   .icon {
     margin-left: 5px;

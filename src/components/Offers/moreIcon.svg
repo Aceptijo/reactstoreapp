@@ -1,7 +1,7 @@
-<svg width="22" height="18" viewBox="0 -5 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg stroke="#FB7756" width="22" height="18" viewBox="0 -5 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_218_55)">
-<path d="M5 1L9 5L5 9" stroke="#FB7756" stroke-width="2" stroke-linecap="round"/>
-<path d="M12 1L16 5L12 9" stroke="#FB7756" stroke-width="2" stroke-linecap="round"/>
+<path d="M5 1L9 5L5 9" stroke-width="2" stroke-linecap="round"/>
+<path d="M12 1L16 5L12 9" stroke-width="2" stroke-linecap="round"/>
 </g>
 <defs>
 <filter id="filter0_d_218_55" x="0" y="0" width="21.4143" height="18" color-interpolation-filters="sRGB">

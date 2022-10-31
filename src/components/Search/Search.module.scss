@@ -28,6 +28,10 @@
       &:focus-visible{
         outline: none;
       }
+      &::placeholder {
+        color: $dotColor;
+        font-size: 15px;
+      }
     }
     .icon {
       transition: 0.3s;

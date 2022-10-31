@@ -1,15 +1,20 @@
 import React from 'react';
 import styles from './Footer.module.scss';
 import Logo from '../Logo/Logo';
+import Info from '../Info/Info';
+import Phones from '../Phones/Phones';
 
 const Footer = () => {
+   const catalogList = ['Кошки', 'Собаки', 'Грызуны', 'Рыбки', 'Птицы', 'Витамины'];
+   const companyList = ['О нас', 'Контакты', 'Наши магазины', 'Пункты выдачи', 'Вакансии'];
+
    return (
       <footer className={styles.container}>
          <div className={styles.line}>
             <Logo color={'white'} />
-            <div className={styles.catalog}></div>
-            <div className={styles.company}></div>
-            <div className={styles.contacts}></div>
+            <Info list={catalogList} title={'Каталог'} />
+            <Info list={companyList} title={'Компания'} />
+            <Phones />
          </div>
       </footer>
    );

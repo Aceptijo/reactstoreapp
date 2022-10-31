@@ -6,7 +6,7 @@ const Search = () => {
    return (
       <form className={styles.search}>
          <SearchIcon className={styles.icon} />
-         <input type="text" />
+         <input type="text" placeholder={'Введите название товара'} />
       </form>
    );
 };

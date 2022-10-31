@@ -4,7 +4,9 @@
   height: 444px;
   background: $secondaryColor;
   .line {
+    display: flex;
     margin-top: 60px;
+    justify-content: space-between;
   }
   &::before {
     content: '';
