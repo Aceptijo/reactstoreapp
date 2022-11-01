@@ -11,8 +11,10 @@ const Info: FC<InfoProps> = ({ list, title }) => {
       <div className={styles.container}>
          <ul className={styles.list}>
             <li className={styles.title}>{title}</li>
-            {list.map((item) => (
-               <li className={styles.item}>{item}</li>
+            {list.map((item, index) => (
+               <li className={styles.item} key={index}>
+                  {item}
+               </li>
             ))}
          </ul>
       </div>

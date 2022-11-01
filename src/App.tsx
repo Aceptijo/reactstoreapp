@@ -8,7 +8,7 @@ import Navigation from './components/Navigation/Navigation';
 import HomePage from './pages/Home/HomePage';
 import SignInPage from './pages/SignInPage';
 import FavouritesPage from './pages/FavouritesPage';
-import BasketPage from './pages/BasketPage';
+import BasketPage from './pages/Basket/BasketPage';
 
 function App() {
    return (

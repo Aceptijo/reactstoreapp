@@ -1,0 +1,22 @@
+
+.container {
+  display: flex;
+  gap: 30px;
+  .avatar {
+
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    .name {
+
+    }
+    .price {
+
+    }
+    .weight {
+
+    }
+  }
+}

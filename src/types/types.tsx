@@ -8,6 +8,9 @@ export interface IAnimals {
    children: IChildren[];
 }
 
+export interface ICards {
+   cards: ICard[];
+}
 export interface ICard {
    id: number;
    name: string;
