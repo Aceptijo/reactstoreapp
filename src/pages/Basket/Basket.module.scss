@@ -4,4 +4,8 @@
   flex-direction: column;
   margin: 0 auto;
   max-width: 1300px;
+  .section {
+    display: flex;
+    gap: 100px;
+  }
 }

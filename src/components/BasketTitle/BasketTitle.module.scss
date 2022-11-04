@@ -1,0 +1,28 @@
+@import '../../assets/styles/variables';
+
+.container {
+  display: flex;
+  align-items: center;
+  font-family: $regularFont;
+  margin-bottom: 30px;
+  .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: $mainColor;
+    flex: 1;
+  }
+  .delete {
+    font-size: 18px;
+    font-weight: 400;
+    color: $secondaryColor;
+    flex: 0 0 1;
+    cursor: pointer;
+    transition: .1s;
+    &:hover {
+      font-size: 20px;
+      font-weight: 600;
+      color: $mainColor;
+      transition: .1s;
+    }
+  }
+}

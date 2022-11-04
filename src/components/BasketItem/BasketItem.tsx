@@ -1,16 +1,27 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styles from './BasketItem.module.scss';
+import Amount from '../Amount/Amount';
+import { ICard } from '../../types/types';
+import { useTypedSelector } from '../../hooks/useTypedSelector';
 
-const BasketItem = () => {
+interface BasketItemProps {
+   item: ICard;
+}
+
+const BasketItem: FC<BasketItemProps> = ({ item }) => {
+   const cash = useTypedSelector((state) => state.cash.cash);
    return (
       <div className={styles.container}>
          <div className={styles.avatar}>
-            <span>test</span>
+            <img className={styles.image} src={item.avatar} alt="Basket item image" />
          </div>
          <div className={styles.description}>
-            <span className={styles.name}>asd</span>
-            <span className={styles.price}>asd</span>
-            <span className={styles.weight}>asd</span>
+            <span className={styles.name}>{item.name + item.description}</span>
+            <div className={styles.price}>
+               <span className={styles.number}>{`${+(item.price * cash).toFixed(1)} BYN`}</span>
+               <Amount />
+            </div>
+            <span className={styles.weight}>{`${+(item.weight * cash).toFixed(1)} кг`}</span>
          </div>
       </div>
    );

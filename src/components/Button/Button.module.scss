@@ -16,6 +16,12 @@
       color: $mainColor;
     }
   }
+  &:active {
+    background: $mainColor;
+    > .text {
+      color: white;
+    }
+  }
   .text {
     font-family: $regularFont;
     font-size: 18px;

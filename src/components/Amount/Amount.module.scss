@@ -1,0 +1,33 @@
+@import '../../assets/styles/variables';
+
+.container {
+  display: flex;
+  align-items: center;
+  font-family: $regularFont;
+  color: $secondaryColor;
+  font-size: 20px;
+  .minus {
+    padding: 5px 10px;
+    border: 3px solid $cardBorderColor;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+  }
+  .counter {
+    font-size: 14px;
+    width: 5%;
+    border-top: 3px solid $cardBorderColor;
+    border-bottom: 3px solid $cardBorderColor;
+    padding: 10px 25px;
+    font-weight: 400;
+    &:focus-visible {
+      outline: none;
+    }
+  }
+  .plus {
+    padding: 5px 10px;
+    border: 3px solid $cardBorderColor;
+    border-radius: 0 10px 10px 0;
+    color: $mainColor;
+    cursor: pointer;
+  }
+}

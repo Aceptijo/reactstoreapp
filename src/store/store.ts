@@ -1,12 +1,6 @@
-import { createStore, combineReducers, applyMiddleware } from '@reduxjs/toolkit';
-import { cardsReducer } from './cardsReducer';
-import { productsReducer } from './productsReducer';
-import { composeWithDevTools } from 'redux-devtools-extension';
-import thunk from 'redux-thunk';
+import { configureStore } from '@reduxjs/toolkit';
+import { rootReducer } from './reducers';
 
-const rootReducer = combineReducers({
-   cards: cardsReducer,
-   products: productsReducer,
+export const store = configureStore({
+   reducer: rootReducer,
 });
-
-export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));

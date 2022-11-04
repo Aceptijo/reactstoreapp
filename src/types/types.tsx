@@ -8,14 +8,12 @@ export interface IAnimals {
    children: IChildren[];
 }
 
-export interface ICards {
-   cards: ICard[];
-}
 export interface ICard {
    id: number;
    name: string;
    description: string;
    price: number;
    oldPrice?: number;
+   weight: number;
    avatar: any;
 }

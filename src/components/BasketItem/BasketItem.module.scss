@@ -1,22 +1,41 @@
+@import '../../assets/styles/variables';
+
 
 .container {
   display: flex;
   gap: 30px;
   .avatar {
-
+    height: 240px;
+    .image {
+      width: 150px;
+      height: 200px;
+    }
   }
   .description {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    font-family: $regularFont;
     .name {
-
+      font-size: 18px;
+      font-weight: 500;
+      color: $secondaryColor;
     }
     .price {
-
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 100px;
+      .number {
+        font-size: 24px;
+        font-weight: 700;
+        color: $mainColor
+      }
     }
     .weight {
-
+      font-size: 24px;
+      font-weight: 500;
+      color: $secondaryColor;
     }
   }
 }
