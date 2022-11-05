@@ -5,6 +5,7 @@ import Catalog from '../../components/Catalog/Catalog';
 import BasketList from '../../components/BasketList/BasketList';
 import Total from '../../components/Total/Total';
 import BasketTitle from '../../components/BasketTitle/BasketTitle';
+import Footer from '../../components/Footer/Footer';
 
 const BasketPage = () => {
    return (
@@ -16,6 +17,7 @@ const BasketPage = () => {
             <BasketList />
             <Total />
          </div>
+         <Footer />
       </main>
    );
 };

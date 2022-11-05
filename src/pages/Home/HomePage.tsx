@@ -11,15 +11,15 @@ import Brands from '../../components/Brands/Brands';
 import About from '../../components/About/About';
 import Notification from '../../components/Notification/Notification';
 import Footer from '../../components/Footer/Footer';
-import { useDispatch } from 'react-redux';
-import { fetchCards } from '../../store/action-creators/cards';
+import { useAppDispatch } from '../../hooks/useAppDispatch';
+import { fetchCards } from '../../store/reducers/ActionCreators';
 
 const HomePage: FC = () => {
-   const dispatch = useDispatch();
+   const dispatch = useAppDispatch();
 
    useEffect(() => {
-      fetchCards()(dispatch);
-   }, [dispatch]);
+      dispatch(fetchCards());
+   }, []);
 
    return (
       <main className={styles.home}>

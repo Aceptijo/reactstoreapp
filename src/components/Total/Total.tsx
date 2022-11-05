@@ -1,11 +1,13 @@
 import React from 'react';
 import Button from '../Button/Button';
 import styles from './Total.module.scss';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
+import { useAppSelector } from '../../hooks/useAppSelector';
+import { ReactComponent as VisaIcon } from './visaIcon.svg';
+import { ReactComponent as MasterCard } from './mastercardIcon.svg';
 
 const Total = () => {
-   const basket = useTypedSelector((state) => state.basket.items);
-   const cash = useTypedSelector((state) => state.cash.cash);
+   const basket = useAppSelector((state) => state.basket.items);
+   const cash = useAppSelector((state) => state.cash.cash);
 
    const priceAmount = basket.reduce((acc, item) => acc + item.price, 0);
    const weightAmount = basket.reduce((acc, item) => acc + item.weight, 0);
@@ -31,7 +33,11 @@ const Total = () => {
             <span>Итого</span>
             <span>{`${+(priceAmount * cash).toFixed(1)} BYN`}</span>
          </div>
-         <Button value={'100%'}>Оформить заказ</Button>
+         <div className={styles.cards}>
+            <VisaIcon />
+            <MasterCard />
+         </div>
+         <Button children={'Оформить заказ'} width={'100%'} />
       </div>
    );
 };

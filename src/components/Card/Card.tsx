@@ -4,9 +4,6 @@ import { ICard } from '../../types/types';
 import { ReactComponent as LikeIcon } from './likeIcon.svg';
 import Price from '../Price/Price';
 import Button from '../Button/Button';
-import { useDispatch } from 'react-redux';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
-import { BasketActionTypes } from '../../store/action-creators/basket';
 
 interface CardProps {
    card: ICard;
@@ -31,7 +28,7 @@ const Card: FC<CardProps> = ({ card }) => {
             <span className={styles.name}>{card.name}</span>
             <span className={styles.description}>{card.description}</span>
             <Price card={card} />
-            <Button card={card} children={'В корзину'} value={'100%'} />
+            <Button card={card} children={'В корзину'} changed={'Добавлено'} width={'100%'} />
          </div>
       </div>
    );

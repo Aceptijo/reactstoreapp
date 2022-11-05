@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
 import Card from '../Card/Card';
 import styles from './Cards.module.scss';
-import { useTypedSelector } from '../../hooks/useTypedSelector';
+import { useAppSelector } from '../../hooks/useAppSelector';
 
 interface CardsProps {
    id: string;
 }
 
 const Cards: FC<CardsProps> = ({ id }) => {
-   const cards = useTypedSelector((state) => state.card.cards);
+   const cards = useAppSelector((state) => state.card.cards);
 
    return (
       <div className={styles.cards}>

@@ -10,10 +10,10 @@
   z-index: 2;
   &:hover {
     transition: 0.3s;
-    background: $dotColor;
+    background: $secondaryColor;
     > .text {
       transition: 0.3s;
-      color: $mainColor;
+      color: white;
     }
   }
   &:active {
@@ -28,5 +28,20 @@
     font-weight: 500;
     color: white;
     transition: 0.3s;
+  }
+}
+
+.disabled {
+  width: 50%;
+  border-radius: 20px;
+  padding: 16px 0;
+  background: $dotColor;
+  cursor: pointer;
+  z-index: 2;
+  .text {
+    font-family: $regularFont;
+    font-size: 18px;
+    font-weight: 500;
+    color: $mainColor;
   }
 }

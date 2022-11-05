@@ -7,8 +7,9 @@
   width: 420px;
   height: 100%;
   padding: 30px;
+  margin-bottom: 230px;
   font-family: $regularFont;
-  border: 3px solid $cardBorderColor;
+  border: 3px solid $dotColor;
   border-radius: 20px;
   color: $secondaryColor;
   font-size: 18px;
@@ -36,6 +37,9 @@
     justify-content: space-between;
     font-weight: 600;
     color: $secondaryColor;
-    margin: 45px 0;
+    margin: 45px 0 0 0;
+  }
+  .card {
+    display: flex;
   }
 }

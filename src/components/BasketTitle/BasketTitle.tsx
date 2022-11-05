@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './BasketTitle.module.scss';
-import { useDispatch } from 'react-redux';
-import { BasketActionTypes } from '../../store/action-creators/basket';
+import { useAppDispatch } from '../../hooks/useAppDispatch';
+import { basketSlice } from '../../store/reducers/basketSlice';
 
 const BasketTitle = () => {
-   const dispatch = useDispatch();
+   const dispatch = useAppDispatch();
 
    const removeAllItems = () => {
-      dispatch({ type: BasketActionTypes.REMOVE_ITEMS });
+      dispatch(basketSlice.actions.removeItems());
    };
 
    return (

@@ -1,25 +1,35 @@
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import styles from './Button.module.scss';
-import { BasketActionTypes } from '../../store/action-creators/basket';
-import { useDispatch } from 'react-redux';
 import { ICard } from '../../types/types';
+import { useAppDispatch } from '../../hooks/useAppDispatch';
+import { basketSlice } from '../../store/reducers/basketSlice';
 
 interface ButtonProps {
    children?: React.ReactNode;
-   value?: string;
+   width?: string;
    card?: ICard;
+   changed?: string;
 }
 
-const Button: FC<ButtonProps> = ({ children, card, value }) => {
-   const dispatch = useDispatch();
+const Button: FC<ButtonProps> = ({ changed, children, card, width }) => {
+   const [title, setTitle] = useState(`${children}`);
+   const [active, setActive] = useState(true);
+
+   const dispatch = useAppDispatch();
 
    const addToBasket = () => {
-      dispatch({ type: BasketActionTypes.ADD_ITEM, payload: card });
+      dispatch(basketSlice.actions.addItem(card));
+      setTitle(`${changed || title}`);
+      setActive(false);
    };
 
-   return (
-      <button onClick={() => addToBasket()} className={styles.btn} style={{ width: value }}>
-         <span className={styles.text}>{children}</span>
+   return active ? (
+      <button onClick={() => addToBasket()} className={styles.btn} style={{ width: width }}>
+         <span className={styles.text}>{title}</span>
+      </button>
+   ) : (
+      <button className={styles.disabled} style={{ width: width }}>
+         <span className={styles.text}>{title}</span>
       </button>
    );
 };

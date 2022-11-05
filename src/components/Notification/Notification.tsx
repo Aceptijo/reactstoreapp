@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Notification.module.scss';
-import Button from '../Button/Button';
 import img from '../Notification/dogImage2.png';
+import Button from '../Button/Button';
 
 const Notification = () => {
    return (
@@ -15,7 +15,7 @@ const Notification = () => {
             </span>
             <form className={styles.form}>
                <input type="text" placeholder={'Ваша электронная почта '} />
-               <Button children={'Подписаться'} value={'45%'} />
+               <Button children={'Подписаться'} changed={'Готово'} width={'45%'} />
             </form>
          </div>
       </section>

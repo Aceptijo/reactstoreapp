@@ -2,32 +2,31 @@
 
 .container {
   display: flex;
-  align-items: center;
-  font-family: $regularFont;
-  color: $secondaryColor;
-  font-size: 20px;
+  align-items: stretch;
   .minus {
     padding: 5px 10px;
-    border: 3px solid $cardBorderColor;
-    border-radius: 10px 0 0 10px;
+    border: 3px solid $dotColor;
+    border-radius: 5px 0 0 5px;
     cursor: pointer;
   }
   .counter {
-    font-size: 14px;
-    width: 5%;
-    border-top: 3px solid $cardBorderColor;
-    border-bottom: 3px solid $cardBorderColor;
-    padding: 10px 25px;
+    font-family: $regularFont;
+    font-size: 18px;
+    width: 15%;
+    text-align: center;
+    border-top: 3px solid $dotColor;
+    border-bottom: 3px solid $dotColor;
+    padding: 4px 15px;
     font-weight: 400;
+    color: $secondaryColor;
     &:focus-visible {
       outline: none;
     }
   }
   .plus {
     padding: 5px 10px;
-    border: 3px solid $cardBorderColor;
-    border-radius: 0 10px 10px 0;
-    color: $mainColor;
+    border: 3px solid $dotColor;
+    border-radius: 0 5px 5px 0;
     cursor: pointer;
   }
 }

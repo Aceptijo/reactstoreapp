@@ -13,7 +13,7 @@ const Consultation = () => {
             <span className={styles.subtitle}>
                Обратитесь за помощью к нашим специалистам и они решат Вашу проблему
             </span>
-            <Button children={'Получить консультацию'} value={'50%'} />
+            <Button children={'Получить консультацию'} changed={'Отправлено'} width={'50%'} />
          </div>
          <div className={styles.picture}>
             <img className={styles.image} src={img} alt="" />

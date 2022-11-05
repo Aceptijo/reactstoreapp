@@ -1,9 +1,11 @@
 @import '../../assets/styles/variables';
 
 
-.container {
+.item {
   display: flex;
   gap: 30px;
+  margin-bottom: 50px;
+  border-bottom: 3px solid $dotColor;
   .avatar {
     height: 240px;
     .image {
