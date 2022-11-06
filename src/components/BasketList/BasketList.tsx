@@ -20,6 +20,7 @@ const BasketList = () => {
                <input
                   type="text"
                   placeholder={'Введите промокод'}
+                  value={text}
                   onChange={(event) => setText(event.target.value)}
                />
                <Button children={'Применить'} width={'40%'} />

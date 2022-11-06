@@ -1,3 +1,5 @@
+import React from 'react';
+
 export interface IChildren {
    title: string;
    variation: string[];
@@ -16,4 +18,9 @@ export interface ICard {
    oldPrice?: number;
    weight: number;
    avatar: any;
+}
+
+export interface IContext {
+   quantity: number;
+   setQuantity: React.Dispatch<React.SetStateAction<number>>;
 }
