@@ -7,7 +7,7 @@ import styles from './Navigation.module.scss';
 
 const Navigation = () => {
    return (
-      <header className={styles.navbar}>
+      <header className={styles.header}>
          <nav>
             <Geolocation />
             <Link to="/">Домой</Link>

@@ -1,0 +1,19 @@
+@import '../../../assets/styles/variables';
+
+.container {
+  font-family: $regularFont;
+  color: white;
+  margin-top: 10px;
+  .list {
+    list-style: none;
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+    .item {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+}

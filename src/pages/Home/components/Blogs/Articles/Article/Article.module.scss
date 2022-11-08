@@ -1,0 +1,38 @@
+@import '../../../../../../assets/styles/variables';
+
+.article {
+  width: 49%;
+  .image{
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+    cursor: pointer;
+    img {
+      vertical-align: top;
+      width: 100%;
+    }
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 3px solid $cardBorderColor;
+    border-top: none;
+    border-radius: 0 0 20px 20px;
+    font-family: $regularFont;
+    color: $secondaryColor;
+    transition: 0.3s;
+    &:hover {
+      border-color: $secondaryColor;
+      transition: 0.3s;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+    }
+    .subtitle {
+      margin: 30px 0;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}

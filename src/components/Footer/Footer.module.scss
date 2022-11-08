@@ -1,12 +1,17 @@
 @import '../../assets/styles/variables';
 
 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
   height: 444px;
   background: $secondaryColor;
   .line {
     display: flex;
-    margin-top: 60px;
     justify-content: space-between;
+    width: 100%;
   }
   &::before {
     content: '';

@@ -7,8 +7,9 @@ import ContactsPage from './pages/ContactsPage';
 import Navigation from './components/Navigation/Navigation';
 import HomePage from './pages/Home/HomePage';
 import SignInPage from './pages/SignInPage';
-import FavouritesPage from './pages/FavouritesPage';
+import FavouritesPage from './pages/Favourite/FavouritesPage';
 import BasketPage from './pages/Basket/BasketPage';
+import Footer from './components/Footer/Footer';
 
 function App() {
    return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/favourites" element={<FavouritesPage />} />
             <Route path="/basket" element={<BasketPage />} />
          </Routes>
+         <Footer />
       </>
    );
 }

@@ -24,7 +24,11 @@ const Button: FC<ButtonProps> = ({ changed, children, card, width }) => {
    };
 
    return active ? (
-      <button onClick={() => addToBasket()} className={styles.btn} style={{ width: width }}>
+      <button
+         onClick={() => addToBasket()}
+         className={styles.btn}
+         style={{ width: width }}
+      >
          <span className={styles.text}>{title}</span>
       </button>
    ) : (

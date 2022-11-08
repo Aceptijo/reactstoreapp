@@ -13,10 +13,16 @@ export const basketSlice = createSlice({
    initialState,
    reducers: {
       addItem(state, action: PayloadAction<any>) {
-         state.items.push(action.payload);
+         state.items.push({ ...action.payload, count: 1 });
       },
       removeItems(state) {
          state.items = [];
+      },
+      changeCount(state, action: PayloadAction<any>) {
+         const item = state.items.find((item) => item.id === action.payload.id);
+         if (item) {
+            item.count = action.payload.count;
+         }
       },
    },
 });

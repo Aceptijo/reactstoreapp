@@ -1,12 +1,12 @@
 import React, { FC } from 'react';
 import styles from './Offers.module.scss';
 import Cards from '../Cards/Cards';
-import OffersTitle from '../OffersTitle/OffersTitle';
+import Title from '../Title/Title';
 
 const Offers: FC = () => {
    return (
       <section className={styles.container}>
-         <OffersTitle title={'Акции недели'} />
+         <Title title={'Акции недели'} />
          <Cards id={'offers'} />
       </section>
    );

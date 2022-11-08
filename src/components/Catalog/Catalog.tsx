@@ -4,7 +4,7 @@ import { ReactComponent as SmallIcon } from './petsSmallIcon.svg';
 import { ReactComponent as GreatIcon } from './petsGreatIcon.svg';
 import { ReactComponent as BurgerIcon } from './burgerIcon.svg';
 import { IAnimals } from '../../types/types';
-import Menu from '../Menu/Menu';
+import Menu from './Menu/Menu';
 
 const Catalog: FC = () => {
    const animals: IAnimals[] = [
@@ -73,11 +73,19 @@ const Catalog: FC = () => {
          children: [
             {
                title: 'Еда',
-               variation: ['Сухие корма', 'Лакомства', 'Витамины, пищевые добавки'],
+               variation: [
+                  'Сухие корма',
+                  'Лакомства',
+                  'Витамины, пищевые добавки',
+               ],
             },
             {
                title: 'Гигиена',
-               variation: ['Туалеты, купалки', 'Груминг, косметика', 'Наполнители, сено'],
+               variation: [
+                  'Туалеты, купалки',
+                  'Груминг, косметика',
+                  'Наполнители, сено',
+               ],
             },
             {
                title: 'Аксессуары',
@@ -113,7 +121,11 @@ const Catalog: FC = () => {
          children: [
             {
                title: 'Еда',
-               variation: ['Сухие корма', 'Лакомства', 'Витамины, пищевые добавки'],
+               variation: [
+                  'Сухие корма',
+                  'Лакомства',
+                  'Витамины, пищевые добавки',
+               ],
             },
             {
                title: 'Гигиена',

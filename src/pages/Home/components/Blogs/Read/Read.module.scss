@@ -1,0 +1,29 @@
+@import '../../../../../assets/styles/variables';
+
+.container {
+  display: flex;
+  align-items: center;
+  font-family: $regularFont;
+  cursor: pointer;
+  &:hover {
+    transition: .3s;
+    > .text {
+      transition: .3s;
+      color: $mainColor;
+    }
+    > .icon {
+      transition: .3s;
+      stroke: $mainColor;
+    }
+  }
+  .text {
+    font-size: 18px;
+    font-weight: 400;
+    color: $secondaryColor;
+    transition: .3s;
+  }
+  .icon {
+    transition: .3s;
+    margin-left: 5px;
+  }
+}
